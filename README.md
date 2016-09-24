@@ -1,3 +1,3 @@
 # SD_analysis
-Everett Skate Deck Transaction Data files and migration scripts
+Everett Skate Deck database queries and migration scripts
 
