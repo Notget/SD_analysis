@@ -26,7 +26,7 @@ function getDataXML($sql, $name='data', $admin=false)
 	$sqlquery = html_entity_decode($sql);
 
 	if (!$admin) {
-	// No bad SQL statements //
+	// Disable SQL table manipulation statements //
 		if (strpos(strtolower ($sqlquery), 'delete') > 0 ) $errorflag = true;
 		if (strpos(strtolower ($sqlquery), 'insert') > 0 ) $errorflag = true;
 		if (strpos(strtolower ($sqlquery), 'update') > 0 ) $errorflag = true;
