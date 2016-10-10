@@ -1,4 +1,3 @@
-
 function sqlToXml($query,$data='') {
 
 	header ("Content-Type:text/xml");//send xml header to browser
@@ -12,14 +11,14 @@ function getDataXML($sql, $name='data', $admin=false)
 {
 /**
  * This function takes a SQL query and formats it as an XML Data stream.
- * If called from the reporting section, do not allow non-select SQL words.
+ * If called from the reporting section, do not allow non-select SQL statements.
 **/
 	$errorflag = false;
 
 	if ($_SESSION["pagename"] == "") $_SESSION["pagename"] = "Unknown";
 	if ($_SESSION["dbLogUser"] == "") {
 		$CurrUser = "SYSTEM";
-	}else{
+	} else {
 		$CurrUser = $_SESSION["dbLogUser"];
 	}
 
