@@ -32,7 +32,7 @@
     // convert to JSON, echo
     $data_encoded = json_encode($data, JSON_NUMERIC_CHECK);
     echo $data_encoded;
-    // convert appropriate strings to int data tidy_parse_file
+  e
     mysqli_close($connection);
      // start buffering - generate html
     file_put_contents('init_var.html', ob_get_contents());
