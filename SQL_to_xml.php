@@ -1,3 +1,5 @@
+<?php
+
 function sqlToXml($query,$data='') {
 
 	header ("Content-Type:text/xml");//send xml header to browser
@@ -80,3 +82,4 @@ function getDataXML($sql, $name='data', $admin=false)
 //	mysqli_close($link);
 	return $xml;
 }
+?>
