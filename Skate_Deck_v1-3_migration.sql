@@ -325,7 +325,7 @@ SELECT `sessiontabletimes`.`sessionDate`,
 
 FROM `pplan_v1_esd`.`sessiontabletimes`;
 
-/* Deal with Addon Linkage */
+/* Resolve Addon Linkage */
 
 DELETE FROM  `pplan_v3_7_test1`.`test1_party_addon`;
 INSERT INTO `pplan_v3_7_test1`.`test1_party_addon`
@@ -334,7 +334,7 @@ INSERT INTO `pplan_v3_7_test1`.`test1_party_addon`
 `addonID`,
 `optionID`)
 
-/* - All parties have skaters */
+/* - All parties that have skaters */
 
 SELECT `party`.`partyID`, `party`.`numSkaters` , 1,0
 FROM `pplan_v1_esd`.`party`
