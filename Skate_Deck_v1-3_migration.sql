@@ -180,7 +180,7 @@ SELECT `partypizza`.`partyID`,
 
 FROM `pplan_v1_esd`.`partypizza`;
 
-/* PartyReceipt - These will not match historicaly */
+/* PartyReceipt - These will not match historically */
 DELETE FROM  `pplan_v3_7_test1`.`test1_partyreceipt`;
 INSERT INTO `pplan_v3_7_test1`.`test1_partyreceipt`
 (`partyID`,
