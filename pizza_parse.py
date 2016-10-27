@@ -36,6 +36,7 @@ toppings_count['Artichoke Hearts'] = toppings_count['Artichoke Hearts ']
 print toppings_count
 '''
 
+# generate pizza plot
 plt.bar(range(len(toppings_count)), toppings_count.values(), align='center')
 plt.xticks(range(len(toppings_count)), toppings_count.keys(), rotation = 80)
 plt.show()
